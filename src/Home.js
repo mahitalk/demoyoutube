@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+import dummyData from "./data";
+
 function Home() {
+  useEffect(() => {
+    console.log("dummyData", dummyData);
+  }, []);
   return (
     <div>
       <iframe
