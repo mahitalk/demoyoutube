@@ -2,20 +2,20 @@ import "./VideoCard.css";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import moment from "moment";
 
-function VideoCard({ videoData }) {
-  const { id, snippet } = videoData[0];
-  const publishedAt = snippet.publishedAt;
+function VideoCard({ item }) {
+  // const { id, snippet } = videoData[0];
+  const publishedAt = item.snippet.publishedAt;
   const timeAgo = moment(publishedAt).fromNow();
   return (
-    <div class="video_container" style={{ width: "368px" }}>
+    <div className="video_container">
       <iframe
         title="youtube-video"
         width="100%"
-        height="315"
-        src={`https://www.youtube.com/embed/${id}`}
+        height="192px"
+        src={`https://www.youtube.com/embed/${item.id}`}
       ></iframe>
-      <div class="row">
-        <div class="col-2">
+      <div className="row">
+        <div className="col-2">
           <img
             src="/images/youtube_logo.jpg"
             alt="YouTube Logo"
@@ -23,12 +23,12 @@ function VideoCard({ videoData }) {
             style={{ width: "40px", height: "40px", borderRadius: "50%" }}
           />
         </div>
-        <div class="col-9">
-          <div className="youtube_heading">{videoData[0].snippet.title}</div>
-          <div>{videoData[0].snippet.channelTitle}</div>
+        <div className="col-9">
+          <div className="youtube_heading">{item.snippet.title}</div>
+          <div className="channel_title">{item.snippet.channelTitle}</div>
           <div>521K views . {timeAgo}</div>
         </div>
-        <div class="col-1">
+        <div className="col-1">
           <BsThreeDotsVertical />
         </div>
       </div>

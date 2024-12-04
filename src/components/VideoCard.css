@@ -2,6 +2,14 @@
   font-family: "Roboto", "Arial", sans-serif;
 }
 
+.video_container {
+  border-radius: 20px;
+}
+
+.channel_title {
+  align-items: left;
+}
+
 .youtube_logo {
    width: 40px; 
    height: 40px;
