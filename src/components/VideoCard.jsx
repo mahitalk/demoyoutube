@@ -9,6 +9,7 @@ function VideoCard({ videoData }) {
   return (
     <div class="video_container" style={{ width: "368px" }}>
       <iframe
+        title="youtube-video"
         width="100%"
         height="315"
         src={`https://www.youtube.com/embed/${id}`}
