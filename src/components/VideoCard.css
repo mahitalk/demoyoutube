@@ -1,0 +1,22 @@
+* {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.youtube_logo {
+   width: 40px; 
+   height: 40px;
+   border-radius: "50%"
+}
+
+.youtube_heading {
+  font-size: 1.17rem;
+  color: #0f0f0f;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
