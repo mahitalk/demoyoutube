@@ -1,4 +1,4 @@
-const dummyData = [
+const VideoData = [
   {
     kind: "youtube#video",
     etag: "12DDsZdQPqty7tdMY5nGq3vIO3w",
@@ -3248,4 +3248,4 @@ const dummyData = [
   },
 ];
 
-export default dummyData;
+export default VideoData;
