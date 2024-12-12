@@ -8,12 +8,12 @@ function VideoCard({ item }) {
   const timeAgo = moment(publishedAt).fromNow();
   return (
     <div className="video_container">
-      <iframe
-        title="youtube-video"
-        width="100%"
-        height="192px"
-        src={`https://www.youtube.com/embed/${item.id}`}
-      ></iframe>
+      <img
+        src={item.snippet.thumbnails.high.url}
+        alt="YouTube Logo"
+        className="youtube_logo"
+        style={{ width: "100%", height: "192px" }}
+      />
       <div className="row">
         <div className="col-2">
           <img
